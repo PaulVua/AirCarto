@@ -1129,7 +1129,7 @@ void loop() {
 
       //graphique CO2
 
-      tft.drawLine(placeX,110, placeX,110-((ccs.geteCO2()-400)/4), ST77XX_GREEN);
+      tft.drawLine(placeX,110, placeX,110-((ccs.geteCO2()-400)/100), ST77XX_GREEN);
 
      
       tft.setTextColor(ST77XX_YELLOW);
@@ -1143,7 +1143,7 @@ void loop() {
 
       //graphique VOC
 
-      tft.drawLine(placeX,156, placeX,156-((ccs.getTVOC())/4), ST77XX_YELLOW);
+      tft.drawLine(placeX,156, placeX,156-((ccs.getTVOC())/50), ST77XX_YELLOW);
       
       tft.drawLine(placeX+1,156, placeX+1,21, ST77XX_BLACK);    
       tft.drawLine(placeX+2,156, placeX+2,21, ST77XX_BLACK);
